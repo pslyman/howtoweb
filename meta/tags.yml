@@ -1,3 +1,13 @@
 tags:
   - slug: howtoweb
     name: howtoweb
+  - slug: html
+    name: html
+  - slug: css
+    name: css
+  - slug: setup
+    name: setup
+  - slug: git
+    name: git
+  - slug: javascript
+    name: javascript
