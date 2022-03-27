@@ -1,0 +1,41 @@
+---
+slug: "2"
+title: 2. Getting started with HTML
+date: 2022-03-27
+author: porterlyman
+tags:
+  - html
+---
+1. Open up VSCode, and open your terminal (should be View > Integrated Terminal or Ctrl + `).
+2. In your terminal, enter `npm install -g live-server` \
+   Live-server is what allows you to see what your website will look like while you're coding it. It's used strictly for developers, and is no more than a useful tool in development. 
+
+   Note: `npm` is the acronym for Node Package Manager, a universal package installer and manager. `-g` means the package will install globally (not inside your project, but to your computer generally). `live-server` is the name of the package you're installing. 
+3. Now we need to create a folder where you can put your code. I usually (on Windows) create a Projects folder inside of my user (C://) directory. Create a Projects folder wherever is easy to remember, and then create another folder where you'll put your website and call it "firstApp" (or whatever you want to call it). 
+4. Download [this index.html file](https://cloud.devlay.com/s/5e4LDNbTqABWCoB) and put it in that folder (firstApp). Then open it in VSCode. 
+5. Go back to your terminal. This next part is a little tricky. You need to navigate to your coding folder (the second one we created) in your **terminal**. Your terminal should already show where you are. It'll say something like "C:\Users\Porter\" (meaning that's the folder or directory your terminal is seeing right now) Here are some commands you need to know:
+
+* If you type in `ls` (LS, but lowercase) and press enter, it'll give you a list of all the folder inside of where you are.
+* If you enter `cd foldername`(but instead of foldername, enter the actual name of the folder you want to enter), then it'll navigate the terminal to that specific folder. Make sure it's one that was listed from the `ls`command. 
+* If you want to navigate backwards to the previous folder in the directory, enter `cd .`(`cd` and then a period). 
+* Using `ls`, `cd`, and `cd .`, you should be able to navigate to your website folder. In the end, you want to be in your C:\Users\Porter\Projects\firstApp folder (or rather the Mac equivalent for Mac users). This should be the same folder where your **index.html** file is. 
+
+6. In your terminal, now just enter `live-server`
+
+You should have a browser window tab (hopefully Chrome) that opens and shows your website, although barebones. If you see Hello World in bold on a white screen, then everything works! If the page didn't open, try navigating to <http://127.0.0.1:8080/> in your browser and see if that works (your terminal may give you a different IP address). Now any time you edit your code in VSCode and hit save, it'll automatically update the website you have open. 
+
+7. Now you can edit your code. HTML (Hypertext Markup Language) is where you'll enter all of your markup text. Basically it's all the text, wording, and even pictures that you'll have in your website. Keep in mind that HTML doesn't include the design or visual setup. Any time you open any website online, the HTML file is the first file the web browser will read. Play around with and edit the index.html file. Some things that are helpful to know: 
+
+* **`<!DOCTYPE html>`** needs to be at the beginning of all HTML files, as it tells the browser which version the html file is in. 
+* All HTML blocks have an opening and closing 'tag'. For example, you'll open a block of code with **`<button>`** and close with **`</button>`** (notice the forward slash in the second one, signifying that it's the closing tag). 
+* **`<html> </html>`**: Everything except for **`<!DOCTYPE html>`** will go inside of here. It signifies to the browser to load whatever is inside of it.  
+* The **`<head> </head>`** block is where you'll put stuff the browser needs to know inside of it. In this example, you have the title: `<title>Title of website here</title>`. This title will be the name of the Chrome tab that it's in. Later we'll be linking the HTML file to your CSS stylesheet, and that'll go in the head block.
+* The **`<body> </body>`** tag is where you'll put the actual content of your website. 
+
+8. Here are some tags you'll need to know:
+
+* **`<h1></h1>`** Anything you enter inside of these will be larger than other text. It's Header text. There is also **`<h2></h2>`**, **`<h3></h3>`**, **`<h4></h4>`** and so on (incrementally larger text size).
+* **`<p></p>`** is your paragraph text, and is regular size.
+* **`<div></div>`** You'll use divs more than anything else, especially when you get into CSS (the fun part). They're just dividers, and add separation between other elements. Basically they help you group things. i.e. If you have a blog post, you'd put your blog title in a div at the top, the actual blog text in a div in the middle, then the comments in a div at the bottom. More on that later. 
+
+9. Remember the W3schools link I had your save in Chrome? Go to <https://www.w3schools.com/html/html_basic.asp> and flip through some of their elements (left side has a glossary you should use) and try them out. Good ones to learn are Spans, Links, Images, Forms, Inputs, and UL and LI. Also, save <https://unsplash.com/> in Chrome. It has royalty free pictures you can use to test out in your website.
