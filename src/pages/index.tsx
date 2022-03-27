@@ -17,6 +17,7 @@ export default function Index() {
           </h1>
           {/* <span className="handle">@nextjs-netlify-news</span> */}
           <h2>A place that holds my guides for learning web</h2>
+          <em>Click on 'guides' from the menu to get started</em>
           {/* <SocialList /> */}
         </div>
       </div>
