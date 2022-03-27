@@ -58,7 +58,7 @@ export function fetchPostContent(): PostContent[] {
     });
   // Sort posts by date
   postCache = allPostsData.sort((a, b) => {
-    if (a.date < b.date) {
+    if (a.slug > b.slug) {
       return 1;
     } else {
       return -1;
