@@ -1,0 +1,78 @@
+---
+slug: "3"
+title: 3. CSS
+date: 2022-03-30
+author: porterlyman
+tags:
+  - css
+---
+In your HTML, you should have `<head>` and `</head>` tags (open and closing). If not, add them to the top. Inside of the `<head>` tags won't be anything the user will see. HTML reads top to bottom, so it'll read anything important in those tabs before rendering out the rest of the page. This is where you'll link external files it needs.
+
+1. In the same directory as your html file, create a new file called **styles.css** (or whatever you want, just end it in .css). 
+
+2. In your HTML head tags, add this: `<link rel="stylesheet" type="text/css" href="styles.css">`
+
+Done! 
+
+Now to add styles, you'll add classes to your tags. For example, put an `<h1>` and `<button>` in your html. Inside of the tag you'll add a class with a name of your choosing. Example: 
+
+```html
+<h1 class="special-header">Here are some words!</h1>
+```
+
+Notice the class was added inside of the tag brackets (or whatever <> is called). You can add multiple classes if you want, just separate them by commas. 
+
+Now go to your CSS file. Add this: 
+
+`.special-header {}`
+
+(note the period at the beginning)
+
+Inside of the curly braces, you can add any styling you want. <https://www.w3schools.com/> is a great resource to learn the styles. 
+
+For example:
+
+```css
+.special-header {
+  background-color: darkgrey;
+  font-weight: bold;
+  color: blue;
+}
+```
+
+You can add whatever styles you like to his class, and it'll style any HTML element that contains that class. 
+
+Can you style a group of elements all of once? Yes you can! That's what `<div>` will be used for. 
+
+Now in your CSS: 
+
+```css
+.all-these-elements {
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  color: white; 
+}
+```
+
+That's it! Something worth noting is that inline css is considered bad practice (`<p style="color:blue; font-size:47px;">some words</p>`). It's rare you'll need to do this. Most, or even all of your styles should be in your style sheet. 
+
+You can target element types instead of classes if needed:
+
+```css
+h1 {
+  font-weight: bolder;
+}
+```
+
+You'll only do this if you want all of that type of element to be styles a specific way. Because `<h1>` can be used many times in a website, one style would modify it everywhere. This is useful if `<h1>`is consistently too small or the wrong font or size, or anything else. 
+
+Homework: 
+
+1. Look into how to style by ID, and when you should do it.
+
+2. Flexbox
+
+3. Display types in CSS
+
+4. Position types in CSS
