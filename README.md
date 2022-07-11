@@ -4,15 +4,9 @@
 
 - Fork Project
 - `npm i`
-- "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "export": "next build && next export -o ./dist",
-    "test": "jest"
-  },
+- Rather `npm next dev` or `npm next start`, don't remember which.
 
-[Click here](https://www.howtoweb.devlay.com/)
+For the currently deployed version, [click here](https://www.howtoweb.devlay.com/)
 
 ## Demo
 
