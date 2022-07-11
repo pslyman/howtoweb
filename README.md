@@ -2,6 +2,16 @@
 
 ## See this project in action
 
+- Fork Project
+- `npm i`
+- "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build && next export -o ./dist",
+    "test": "jest"
+  },
+
 [Click here](https://www.howtoweb.devlay.com/)
 
 ## Demo
