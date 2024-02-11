@@ -1,3 +1,7 @@
+## Description
+
+This was created as a way to play around with React and Netlify, as well as a way to get people started with the basics of web programming. Not many pages exist at present, that may change in the future. 
+
 ![Next.js blogging template for Netlify](https://repository-images.githubusercontent.com/284910441/d8efc300-e2ae-11ea-9596-b01e3844e39d)
 
 ## See this project in action
